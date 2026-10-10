@@ -23,6 +23,8 @@ def run_with_local_trainers(
     epoch. The caller owns the data, labels, optimizer, learning rate, batching,
     augmentation and optimizer state. Initialize optimizer state separately for
     each local model, and preserve it across that client's local epochs.
+    SGDLocalTrainer in local_training.py implements this callback contract for
+    ordinary classification SGD with all optimizer settings caller-supplied.
     """
     if isinstance(local_epochs, bool) or not isinstance(local_epochs, int) or local_epochs <= 0:
         raise ValueError('A positive local epoch count is required')

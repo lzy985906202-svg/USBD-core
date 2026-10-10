@@ -5,3 +5,7 @@
 !/requirements.txt
 !/usbd.py
 !/example_integration.py
+!/local_training.py
+!/demo_synthetic.py
+!/tests/
+!/tests/test_usbd.py
