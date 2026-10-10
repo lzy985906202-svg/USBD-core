@@ -1,0 +1,7 @@
+# Release allowlist: new files are excluded until intentionally listed here.
+*
+!/.gitignore
+!/README.md
+!/requirements.txt
+!/usbd.py
+!/example_integration.py
